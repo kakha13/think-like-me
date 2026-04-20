@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>think-like-me — Docs</title>
+  <meta name="description" content="Personal Claude Code skill that actively consults curated engineering rules before drafting code.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='25' font-size='24'%3E%26%23x1F9E0;%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #c8562a;
+      --theme-color-dark: #a0431f;
+      --sidebar-width: 300px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    }
+    .sidebar {
+      padding-top: 20px;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .sidebar-nav > ul > li > p {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a7f70;
+      margin: 1.6em 0 0.4em;
+      padding: 0 15px;
+    }
+    .sidebar-nav ul li a {
+      color: #1a1713;
+    }
+    .sidebar-nav ul li.active > a {
+      color: var(--theme-color);
+      font-weight: 600;
+    }
+    .app-name-link {
+      font-family: ui-monospace, Menlo, Monaco, monospace;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .markdown-section {
+      max-width: 820px;
+    }
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .markdown-section code {
+      background: rgba(200, 86, 42, 0.08);
+      color: #a0431f;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+    }
+    .markdown-section pre {
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+    .markdown-section pre > code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+    .markdown-section table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .markdown-section table th,
+    .markdown-section table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .markdown-section table th {
+      background: rgba(200, 86, 42, 0.04);
+      font-weight: 600;
+    }
+    .markdown-section blockquote {
+      border-left: 3px solid var(--theme-color);
+      background: rgba(200, 86, 42, 0.04);
+      border-radius: 0 6px 6px 0;
+    }
+    .search {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .search input {
+      border-radius: 6px !important;
+    }
+    .content {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading think-like-me docs…</div>
+
+  <script>
+    window.$docsify = {
+      name: 'think-like-me',
+      nameLink: '#/',
+      repo: false,
+      basePath: '../',
+      homepage: 'docs/README.md',
+      loadSidebar: 'docs/_sidebar.md',
+      subMaxLevel: 3,
+      auto2top: true,
+      relativePath: true,
+      notFoundPage: false,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search docs…',
+        noData: 'No results.',
+        depth: 6,
+        hideOtherSidebarContent: false,
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
+      pagination: {
+        previousText: '← Previous',
+        nextText: 'Next →',
+        crossChapter: true,
+        crossChapterText: true,
+      }
+    };
+  </script>
+
+  <!-- Docsify core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+
+  <!-- Syntax highlighting for languages used in the rules -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-tsx.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+</body>
+</html>
