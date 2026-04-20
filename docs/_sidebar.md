@@ -1,6 +1,6 @@
 - **Overview**
   - [Introduction](docs/README.md)
-  - <a href="presentation/index.html" target="_blank" rel="noopener">Branded splash ↗</a>
+  - <a href="presentation/index.html" target="_blank" rel="noopener">Presentation ↗</a>
 
 - **Design & Planning**
   - [Design spec](DESIGN.md)
